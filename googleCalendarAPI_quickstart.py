@@ -54,9 +54,7 @@ def get_credentials():
 def main():
     """Shows basic usage of the Google Calendar API.
 
-    Creates a Google Calendar API service object and outputs a list of the next
-    10 events on the user's calendar.
-    """
+    Creates a Google Calendar API service object and outputs a list of the next event on the user's calendar."""
     credentials = get_credentials()
     http = credentials.authorize(httplib2.Http())
     service = discovery.build('calendar', 'v3', http=http)
