@@ -20,7 +20,7 @@ try:
 			with open ('liners.txt', 'w') as tweetfile:
 				buff.remove(line) #Removes the tweeted line.
 				tweetfile.writelines(buff)
-			time.sleep(900)
+			time.sleep(1)
 		else:
 			with open ('liners.txt', 'w') as tweetfile:
 				buff.remove(line) #Removes the line that has more than 140 characters.
